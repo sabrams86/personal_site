@@ -1,0 +1,4 @@
+= form_for @post, html: {class: 'form'} do |f|
+  = f.text_field :title
+  = f.text_area :content
+  = f.submit :create
