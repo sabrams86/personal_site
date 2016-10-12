@@ -1,2 +1,348 @@
-h1 Steve Abrams
-h3 Code, Coffee, and Life
+
+.parallax-content
+  .banner#title
+    .container
+      .section
+        h1 Steve Abrams
+        .logo-collection
+          = image_tag('javascript_logo.png', class: 'header-logo')
+          = image_tag('node_js_logo.png', class: 'header-logo')
+          = image_tag('ruby-logo.png', class: 'header-logo')
+          = image_tag('rails_logo.png', class: 'header-logo')
+          = image_tag('angular_logo.png', class: 'header-logo')
+          = image_tag('react_logo.png', class: 'header-logo')
+          = image_tag('mongo_leaf.png', class: 'header-logo')
+          = image_tag('postgresql.png', class: 'header-logo')
+          = image_tag('HTML5_Badge_512.png', class: 'header-logo')
+          = image_tag('sass-logo-new.png', class: 'header-logo')
+          = image_tag('jasmine_logo.png', class: 'header-logo')
+          = image_tag('gulp-2x.png', class: 'header-logo')
+          = image_tag('bower_logo.png', class: 'header-logo')
+          = image_tag('jquery_logo.gif', class: 'header-logo')
+          = image_tag('bootstrap-logo.png', class: 'header-logo')
+          = image_tag('GitHub-Mark.png', class: 'header-logo')
+        h3 Web Development and the Whole Stack
+.parallax-background
+  .banner#banner1    
+    .container
+      .section
+        h2 My Portfolio
+        h4.hidden-xs I believe that user experience is everything.  The most advanced site in the world is useless if no one wants to use it.
+.parallax-section
+  .container
+    .section
+      div.portfolio
+        h3 
+          | Check out my code at 
+          a href='https://github.com/sabrams86' target='_blank' github
+        .row  
+          .col-md-4.col-xs-12
+            .project
+              header
+                h3 FriendlyGear
+                = image_tag(src='javascript_logo.png', class: 'mini-logo')
+                = image_tag(src='node_js_logo.png', class: 'mini-logo')
+                = image_tag(src='angular_logo.png', class: 'mini-logo')
+                = image_tag(src='mongo_leaf.png', class: 'mini-logo')
+                = image_tag(src='sass-logo-new.png', class: 'mini-logo')
+                = image_tag(src='jasmine_logo.png', class: 'mini-logo')
+                = image_tag(src='gulp-2x.png', class: 'mini-logo')
+                = image_tag(src='bower_logo.png', class: 'mini-logo')
+                = image_tag(src='jquery_logo.gif', class: 'mini-logo')
+                = image_tag(src='bootstrap-logo.png', class: 'mini-logo')
+              main
+                p Rent your outdoor gear to others or rent gear from others.  Think Craigslist meeets AirBnB for backpacking and outdoor activities!
+              footer  
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#fgmodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/fg' target='_blank') GitHub
+                a.btn.btn-info.right.livebutton(href='http://www.friendlygear.com/' target='_blank') Live Site
+          .col-md-4.col-xs-12
+            .project
+              header
+                h3 RoadTrip
+                = image_tag('ruby-logo.png', class: 'mini-logo')
+                = image_tag('rails_logo.png', class: 'mini-logo')
+                = image_tag('react_logo.png', class: 'mini-logo')
+                = image_tag('postgresql.png', class: 'mini-logo')
+                = image_tag('sass-logo-new.png', class: 'mini-logo')
+                = image_tag('jquery_logo.gif', class: 'mini-logo')
+                = image_tag('bootstrap-logo.png', class: 'mini-logo')
+              main
+                p Make a comic and send it to your friends, but first it'll get translated to five different languages and back to english!
+              footer  
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#roadtripmodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/road-trip-back-end' target='_blank') GitHub
+                a.btn.btn-info.right.livebutton(href='http://roadtrip.abramswebdevelopment.com/' target='_blank') Live Site
+          .col-md-4.col-xs-12
+            .project
+              header
+                h3 TeleComics
+                = image_tag('javascript_logo.png', class: 'mini-logo')
+                = image_tag('node_js_logo.png', class: 'mini-logo')
+                = image_tag('mongo_leaf.png', class: 'mini-logo')
+                = image_tag('sass-logo-new.png', class: 'mini-logo')
+                = image_tag('jquery_logo.gif', class: 'mini-logo')
+                = image_tag('bootstrap-logo.png', class: 'mini-logo')
+              main
+                p Make a comic and send it to your friends, but first it'll get translated to five different languages (Klingon included) and back to english!  A fun twist on a classic game.
+                br                      
+              footer  
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#telemodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/telecomics' target='_blank') GitHub
+                a.btn.btn-info.right.livebutton(href='https://protected-waters-5312.herokuapp.com/' target='_blank') Live Site
+        .row
+          .col-xs-12
+            .project
+              header
+                h3 Double Back End
+                = image_tag('javascript_logo.png', class: 'mini-logo')
+                = image_tag('node_js_logo.png', class: 'mini-logo')
+                = image_tag('ruby-logo.png', class: 'mini-logo')
+                = image_tag('rails_logo.png', class: 'mini-logo')
+                = image_tag('angular_logo.png', class: 'mini-logo')
+                = image_tag('mongo_leaf.png', class: 'mini-logo')
+                = image_tag('gulp-2x.png', class: 'mini-logo')
+              a(href="#" data-toggle="modal" data-target="#myModal")
+                = image_tag('flow.png', class: 'flowchartsml')
+              main
+                p An experiment with Angular, Rails, and Expressjs.  Two identical angular front ends deployed statically to Amazon S3.  One talks to a Rails API backend, another to an Expressjs API (Node.js) backend.  Both backends hook into the same MongoDB.  Click the figure above to see how everthing is hooked up. 
+              footer.hidden-xs
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#teamodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/angular-cart' target='_blank') Angular GitHub 
+                | 
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/rails-shopping-cart' target='_blank') Rails GitHub
+                | 
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/mean-shopping-cart' target='_blank') Express GitHub
+                a.btn.btn-info.livebutton.right(href='http://rails-cart.s3-website-us-west-2.amazonaws.com' target='_blank') Rails Site  
+                .right &nbsp;
+                a.btn.btn-info.livebutton.right(href='http://angular-cart.s3-website-us-west-2.amazonaws.com' target='_blank') Express Site  
+              footer.hidden-sm.hidden-md.hidden-lg
+                .btn-row
+                  a.btn.btn-sm.btn-danger.left(href="#" data-toggle="modal" data-target="#teamodal") Preview
+                  a.btn.btn-sm.btn-info.livebutton(href='http://rails-cart.s3-website-us-west-2.amazonaws.com' target='_blank') Rails Site  
+                  a.btn.btn-sm.btn-info.livebutton.right(href='http://angular-cart.s3-website-us-west-2.amazonaws.com' target='_blank') Express Site  
+                .btn-row
+                  a.btn.btn-sm.btn-primary.gitbutton.left(href='https://github.com/sabrams86/angular-cart' target='_blank') Angular GitHub 
+                  a.btn.btn-sm.btn-primary.gitbutton(href='https://github.com/sabrams86/rails-shopping-cart' target='_blank') Rails GitHub
+                  a.btn.btn-sm.btn-primary.gitbutton.right(href='https://github.com/sabrams86/mean-shopping-cart' target='_blank') Express GitHub      
+        .row  
+          .col-md-4.col-xs-12
+            .project
+              header
+                h3 Gear Trader
+                = image_tag('javascript_logo.png', class: 'mini-logo')
+                = image_tag('node_js_logo.png', class: 'mini-logo')
+                = image_tag('mongo_leaf.png', class: 'mini-logo')
+                = image_tag('sass-logo-new.png', class: 'mini-logo')
+                = image_tag('bower_logo.png', class: 'mini-logo')
+                = image_tag('jquery_logo.gif', class: 'mini-logo')
+              main
+                p A site demonstrating complex associations using Express and MongoDB
+              footer
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#gearmodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/friendlygear' target='_blank') GitHub
+                a.btn.btn-info.right.livebutton(href='http://friendlygear.abramswebdevelopment.com/' target='_blank') Live Site
+          .col-md-4.col-xs-12
+            .project
+              header
+                h3 FlashCodes
+                = image_tag('javascript_logo.png', class: 'mini-logo')
+                = image_tag('node_js_logo.png', class: 'mini-logo')
+                = image_tag('mongo_leaf.png', class: 'mini-logo')
+                = image_tag('jasmine_logo.png', class: 'mini-logo')
+                = image_tag('jquery_logo.gif', class: 'mini-logo')
+                = image_tag('bootstrap-logo.png', class: 'mini-logo')
+              main
+                p A site for creating and playing quizzes
+              footer
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#quizmodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/quizbuilder' target='_blank') GitHub
+                a.btn.btn-info.right.livebutton(href='http://flashcodes.abramswebdevelopment.com/' target='_blank') Live Site
+          .col-md-4.col-xs-12
+            .project
+              header
+                h3 Squirrel
+                = image_tag('javascript_logo.png', class: 'mini-logo')
+                = image_tag('node_js_logo.png', class: 'mini-logo')
+                = image_tag('mongo_leaf.png', class: 'mini-logo')
+              main  
+                p Help Squirrel get back to his home at the top of the tree
+              footer
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#squirrelmodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/squirrel' target='_blank') GitHub
+                a.btn.btn-info.right.livebutton(href='http://squirrel.abramswebdevelopment.com/' target='_blank') Live Site
+        .row              
+          .col-md-4.col-xs-12
+            .project
+              header
+                h3 Javascipt Filters
+                = image_tag('javascript_logo.png', class: 'mini-logo')
+                = image_tag('node_js_logo.png', class: 'mini-logo')
+                = image_tag('mongo_leaf.png', class: 'mini-logo')
+              main
+                p A proof of concept project centered around filtering with AJAX calls 
+              footer  
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#jsmodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/js-filter' target='_blank') GitHub
+                a.btn.btn-info.right.livebutton(href='http://js-filter.abramswebdevelopment.com/' target='_blank') Live Site
+          .col-md-4.col-xs-12
+            .project
+              header
+                h3 API Demo
+                = image_tag('javascript_logo.png', class: 'mini-logo')
+              main
+                p A proof of concept project centered around API calls
+              footer
+                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#apimodal") Preview
+                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/api-demo' target='_blank') GitHub
+                a.btn.btn-info.right.livebutton(href='http://api-demo.abramswebdevelopment.com/' target='_blank') Live Site
+  div.banner#banner2
+    .container
+      h2 About Me
+      h4 Hobbiest Turned Professional
+  .container
+    div.about
+      p I used to be an engineer.  One day I found myself wanting to help my company re-organize their data by implementing a new database system.  After some research and advice from a friend, I decided to try to implement a web based database using Ruby on Rails.
+      p 
+        | I spent all of my free time on nights and weekends learning the basics and going through all sorts of tutorials I finally was able to successfully build the 
+        a(href='https://github.com/sabrams86/engdb' target='_blank') database 
+        | and deploy it locally on the company's network.  Over the next year I realized that my favorite thing I had ever worked on (professionally or academically) was building the database.
+      p 
+        | A friend told me about 
+        a(href='http://www.galvanize.com/' target='_blank') Galvanize 
+        | and said I should check out their 24 week Full Stack program.  I decided that the timing was right, so I applied, was accepted, and am graduating from the full stack program in October 2015 at which point I will be trained for Junior to Mid-level full stack jobs using MEAN (MongoDB, Expressjs, Angular, Nginx) and Rails (PosgreSQL, Rails, React, Apache) stacks.
+      p 
+        | I absolutely love the tech scene and try my best to keep of with the hottest trends, gadgets, and happenings in the tech community.  I frequent the Denver Ruby and Node.js meetups, as well as participating in other Galvanize and tech community events.
+  div.banner#banner3
+    .container
+      h2 Contact Me
+      h4 Let's chat
+  .container      
+    div.contact
+      a(href='/')
+      h3 
+        | Connect with me at 
+        a(href='https://www.linkedin.com/in/stevenabrams86' target='_blank') Linkedin
+      / h4 or feel free to send me a message here:
+      / .row
+      /   form.contactform.col-xs-6.col-xs-offset-3(method='post' action='/send')
+      /     .row
+      /       label(for='name') Your Name
+      /     .row
+      /       input#name(type='text' name='name')
+      /     .row
+      /       label(for='email') Your Email
+      /     .row
+      /       input#email(type='text' name='email')
+      /     .row
+      /       label(for='subject') Subject
+      /     .row
+      /       input#subject(type='text' name='subject')
+      /     .row
+      /       label(for='body') Message
+      /     .row
+      /       textarea#body(name='body' rows='8')
+      /     .row
+      /       button#emailbutton(type='submit') Send
+
+<!-- fg Modal -->
+div(class="modal fade" id="fgmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube-nocookie.com/embed/sC0bBjGLkFU" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+
+          
+<!-- roadtrip Modal -->
+div(class="modal fade" id="roadtripmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube-nocookie.com/embed/B9KuEGWKYQM" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+
+
+<!-- double backend flow chart Modal -->
+div(class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        = image_tag('flow.png', class: 'flowchart')
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        
+<!-- mean tea Modal -->
+div(class="modal fade" id="teamodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube.com/embed/rlbXODIxK5E" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+
+<!-- telecomics Modal -->
+div(class="modal fade" id="telemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube.com/embed/LOmV4KBDIfs" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+
+<!-- friendlygear Modal -->
+div(class="modal fade" id="gearmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube.com/embed/u04FcEEbvqk" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+
+<!-- flashcodes Modal -->
+div(class="modal fade" id="quizmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube.com/embed/sOLkdsmujnE" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+
+<!-- js-filter Modal -->
+div(class="modal fade" id="jsmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube.com/embed/cfXBSHTTP7M" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+
+<!-- squirrel Modal -->
+div(class="modal fade" id="squirrelmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube.com/embed/qrLanTOzpVM" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+
+<!-- api-demo Modal -->
+div(class="modal fade" id="apimodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-body
+        iframe(width="480" height="360" src="https://www.youtube.com/embed/OtJOu43JysU" frameborder="0" allowfullscreen)
+      .modal-footer
+        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
+        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
