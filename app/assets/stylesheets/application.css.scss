@@ -251,7 +251,7 @@ input:focus, textarea:focus, select:focus {
 
 #banner1 {
   padding-top: 50px;
-  background-image: url("computer.jpeg");
+  background-image: image-url("computer.jpeg");
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -263,7 +263,7 @@ input:focus, textarea:focus, select:focus {
 #banner2 {
   margin-top: 20px;
   padding-top: 50px;
-  background-image: url("flower.jpeg");
+  background-image: image-url("flower.jpeg");
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -274,7 +274,7 @@ input:focus, textarea:focus, select:focus {
 
 #banner3 {
   padding-top: 50px;
-  background-image: url("binoculars.JPG");
+  background-image: image-url("binoculars.JPG");
   background-position: center;
   background-size: cover;
   height: 400px;
