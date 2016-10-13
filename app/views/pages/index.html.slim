@@ -6,24 +6,74 @@
         h1 Steve Abrams
         .logo-collection
           = image_tag('javascript_logo.png', class: 'header-logo')
-          = image_tag('node_js_logo.png', class: 'header-logo')
+          = image_tag('scala-logo.png', class: 'header-logo')
           = image_tag('ruby-logo.png', class: 'header-logo')
+          = image_tag('node_js_logo.png', class: 'header-logo')
           = image_tag('rails_logo.png', class: 'header-logo')
-          = image_tag('angular_logo.png', class: 'header-logo')
+          = image_tag('play_logo.png', class: 'header-logo')
           = image_tag('react_logo.png', class: 'header-logo')
-          = image_tag('mongo_leaf.png', class: 'header-logo')
+          = image_tag('redux-logo.png', class: 'header-logo')
+          = image_tag('angular_logo.png', class: 'header-logo')
           = image_tag('postgresql.png', class: 'header-logo')
+          = image_tag('mysql-logo.png', class: 'header-logo')
+          = image_tag('mongo_leaf.png', class: 'header-logo')
           = image_tag('HTML5_Badge_512.png', class: 'header-logo')
           = image_tag('sass-logo-new.png', class: 'header-logo')
           = image_tag('jasmine_logo.png', class: 'header-logo')
+          = image_tag('webpack-logo.png', class: 'header-logo')
           = image_tag('gulp-2x.png', class: 'header-logo')
           = image_tag('bower_logo.png', class: 'header-logo')
           = image_tag('jquery_logo.gif', class: 'header-logo')
+          = image_tag('salt-logo.png', class: 'header-logo')
           = image_tag('bootstrap-logo.png', class: 'header-logo')
           = image_tag('GitHub-Mark.png', class: 'header-logo')
-        h3 Web Development and the Whole Stack
+        h3 Code, Coffee, and Life
 .parallax-background
-  .banner#banner1    
+  .banner#banner1
+    .container
+      h2 My Story
+      h4 Hobbiest Turned Professional
+  .container
+    div.about
+      p
+        | I'm a web developer and software engineer in the Denver area.  I like
+        |  to consider myself language agnostic, but right now I'm working in 
+        |  Scala/Play/MySQL and Ruby/Rails/PostgreSQL on the back end, and 
+        |  React/Redux/Webpack/ES6/Webpack on the front end.  I love talking about
+        |  development and tech trends, as well as coffee, craft beer, and all
+        |  things outdoors in Colorado.
+      p 
+        | I used to be a mechanical engineer, but one day I found myself wanting to help my 
+        |  company re-organize their data by implementing a new database system.  
+        |   After some research and advice from a friend, I decided to try to 
+        |  implement a web based database using Ruby on Rails.
+      p 
+        | I spent all of my free time on nights and weekends learning the basics 
+        |  and going through all sorts of tutorials I finally was able to successfully 
+        |  build the database and deploy it locally on the company's network.
+        |   Over the next year I realized that my favorite thing I had ever worked 
+        |  on (professionally or academically) was building the database.
+      p 
+        | A friend told me about 
+        a(href='http://www.galvanize.com/' target='_blank') Galvanize 
+        |  and said I should check out their six month Full Stack program.  I 
+        |  decided that the timing was right, so I applied, was accepted, and 
+        |  graduated in October 2015, getting a job at a quickly growing startup
+        |  in the app advertising industry writing backend Scala code, tons of
+        |  SQL, and even working a bit on a modern React front end.
+      p 
+        | I absolutely love the tech scene and try my best to keep of with the 
+        |  hottest trends, gadgets, and happenings in the tech community.  I 
+        |  frequent the Denver Ruby and Scala meetups, as well as participating 
+        |  in other Galvanize and tech community events.
+      p
+        | If you are looking for someone to chat with in Denver about the local
+        |  tech scene or the trending tech stacks, hit me up on 
+        a(href='https://www.linkedin.com/in/stevenabrams86' target='_blank') LinkedIn
+        |  or 
+        a(href="https://twitter.com/sabrams86" target="_black") Twitter
+        | .
+  .banner#banner2 
     .container
       .section
         h2 My Portfolio
@@ -35,6 +85,9 @@
         h3 
           | Check out my code at 
           a href='https://github.com/sabrams86' target='_blank' github
+        h3 
+          | This is a collection of projects I wrote while attending Galvanize
+          |  in 2015
         .row  
           .col-md-4.col-xs-12
             .project
@@ -196,23 +249,6 @@
                 a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#apimodal") Preview
                 a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/api-demo' target='_blank') GitHub
                 a.btn.btn-info.right.livebutton(href='http://api-demo.abramswebdevelopment.com/' target='_blank') Live Site
-  div.banner#banner2
-    .container
-      h2 About Me
-      h4 Hobbiest Turned Professional
-  .container
-    div.about
-      p I used to be an engineer.  One day I found myself wanting to help my company re-organize their data by implementing a new database system.  After some research and advice from a friend, I decided to try to implement a web based database using Ruby on Rails.
-      p 
-        | I spent all of my free time on nights and weekends learning the basics and going through all sorts of tutorials I finally was able to successfully build the 
-        a(href='https://github.com/sabrams86/engdb' target='_blank') database 
-        | and deploy it locally on the company's network.  Over the next year I realized that my favorite thing I had ever worked on (professionally or academically) was building the database.
-      p 
-        | A friend told me about 
-        a(href='http://www.galvanize.com/' target='_blank') Galvanize 
-        | and said I should check out their 24 week Full Stack program.  I decided that the timing was right, so I applied, was accepted, and am graduating from the full stack program in October 2015 at which point I will be trained for Junior to Mid-level full stack jobs using MEAN (MongoDB, Expressjs, Angular, Nginx) and Rails (PosgreSQL, Rails, React, Apache) stacks.
-      p 
-        | I absolutely love the tech scene and try my best to keep of with the hottest trends, gadgets, and happenings in the tech community.  I frequent the Denver Ruby and Node.js meetups, as well as participating in other Galvanize and tech community events.
   div.banner#banner3
     .container
       h2 Contact Me
@@ -223,6 +259,8 @@
       h3 
         | Connect with me at 
         a(href='https://www.linkedin.com/in/stevenabrams86' target='_blank') Linkedin
+        |  or on 
+        a(href="https://twitter.com/sabrams86" target="_black") Twitter
       / h4 or feel free to send me a message here:
       / .row
       /   form.contactform.col-xs-6.col-xs-offset-3(method='post' action='/send')
