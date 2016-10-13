@@ -1,8 +1,9 @@
-h1 My Blog
-- if current_user.try(:admin?)
-  = link_to 'New Post', new_post_path
+.container
+  h1 My Blog
+  - if current_user.try(:admin?)
+    = link_to 'New Post', new_post_path
 
-- @posts.each do |post|
-  h3 = post.title
-  h4 = post.created_at
-  p = post.content
+  - @posts.each do |post|
+    h3 = post.title
+    h4 = post.created_at
+    p = markdown(post.content)
