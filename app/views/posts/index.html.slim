@@ -1,9 +1,11 @@
 .container
-  h1 My Blog
+  = link_to 'Back to my site', root_path
   - if current_user.try(:admin?)
-    = link_to 'New Post', new_post_path
+    p = link_to 'New Post', new_post_path
 
   - @posts.each do |post|
-    h3 = post.title
-    h4 = post.created_at
-    p = markdown(post.content)
+    h2
+      = post.created_at.strftime("%d %b %Y")
+      |  - 
+      = link_to post.title, post_path(post)
+    = link_to 'Delete', post_path(post), method: :delete

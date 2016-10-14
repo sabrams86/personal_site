@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-  before_action :get_post, only: [:show, :edit, :update, :delete]
+  before_action :get_post, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin, only: [:new, :create, :edit, :update, :destroy]
 
   def index
     @posts = Post.all.order(created_at: :desc)
@@ -15,8 +16,10 @@ class PostsController < ApplicationController
   def create
     @post = Post.new post_params
     if @post.save
+      flash[:success] = "Your post has been created."
       redirect_to @post
     else
+      flash[:alert] = "Something went wront, try again."
       render :new
     end
   end
@@ -26,6 +29,7 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
+      flash[:success] = "Post updated."
       redirect_to @post
     else
       flash[:alert] = "Something is wrong with your form!"
@@ -35,8 +39,10 @@ class PostsController < ApplicationController
 
   def destroy
     if @post.destroy
-      redirect_to :index
+      flash[:success] = "Post Deleted."
+      redirect_to posts_path
     else
+      flash[:alert] = "Something went wrong.  Please try again."
       render @post
     end
   end

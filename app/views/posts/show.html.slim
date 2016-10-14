@@ -1,5 +1,7 @@
 .container
+  = link_to 'Back to more posts', posts_path  
   h1 = @post.title
+  - if current_user.try(:admin?)
+    = link_to 'edit', edit_post_path(@post)
   .post-content
     = markdown(@post.content)
-    = link_to 'edit', edit_post_path(@post)
