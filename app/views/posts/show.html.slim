@@ -1,8 +1,1 @@
-.container
-  = link_to 'Back to more posts', posts_path  
-  h1 = @post.title
-  - if current_user.try(:admin?)
-    = link_to 'edit', edit_post_path(@post)
-  .post-content
-    = markdown(@post.content)
-  iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2F#{Rails.application.secrets.host}%2Fposts%2F#{@post.id}&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId=162333200520284" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+= render 'post', post: @post
