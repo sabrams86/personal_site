@@ -8,4 +8,5 @@
       = post.created_at.strftime("%d %b %Y")
       |  - 
       = link_to post.title, post_path(post)
-    = link_to 'Delete', post_path(post), method: :delete
+    - if current_user.try(:admin?)
+      = link_to 'Delete', post_path(post), method: :delete

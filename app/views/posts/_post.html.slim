@@ -5,12 +5,27 @@
     = link_to 'edit', edit_post_path(post)
   .post-content
     = markdown(post.content)
+  br
   iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2F#{Rails.application.secrets.host}%2Fposts%2F#{post.id}&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId=162333200520284" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
-  .comment-form
-    = form_for [post, post.comments.new], remote: true do |f|
-      = f.text_field :content, placeholder: 'Add a comment...', 
-                     class: "comment_content", 
-                     id: "comment_content_#{post.id}"
-      = f.submit "Submit"
+  h4 Comments
+  - if current_user
+    .comment-form
+      = form_for [post, post.comments.new], remote: true do |f|
+        = f.text_field :content, placeholder: 'Add a comment...', 
+                       class: "comment_content", 
+                       id: "comment_content_#{post.id}"
+        br
+        br
+        = f.submit "Submit"
+  - else
+    p
+      = link_to 'Log In', new_user_session_path
+      |  or&nbsp;
+      = link_to 'Sign Up', new_user_registration_path
+      |  to post a comment
   .comments id="comments_#{post.id}"
-    = render post.comments, post: post
+    - if post.comments.any?
+      = render post.comments.last(6).reverse, post: post
+      .paginator id="#comments-paginator-#{post.id}"
+        - unless post.comments.count <= 6
+          = link_to "view all #{post.comments.count} comments", post_comments_path(post), remote: true, class: 'more-comments', data: {post_id: "#{post.id}", type: "html"}

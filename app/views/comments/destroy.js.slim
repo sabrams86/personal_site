@@ -1,5 +1,5 @@
 | $('#comments_
 = @post.id
 | ').html("
-= j render @post.comments, post: @post, comment: @comment
+= j render @post.comments.last(6).reverse, post: @post, comment: @comment
 | "); 

@@ -1,7 +1,13 @@
 .user-name
-  
+  - if comment.user != nil
+    em
+      = comment.user.user_name
+    .time-ago
+      | &nbsp;
+      = time_ago_in_words comment.created_at
+      |  ago
 .comment-content
   = comment.content
-- if comment.user == current_user
+- if (current_user && (comment.user == current_user))
   = link_to post_comment_path(post, comment), {method: :delete, id: "delete-#{comment.id}", remote: true} do
-    span class="glyphicon glyphicon-remove delete-comment"
+    span class="delete-comment"  delete

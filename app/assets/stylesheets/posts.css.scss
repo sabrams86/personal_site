@@ -25,3 +25,16 @@ li {
     display: inline;
   }
 }
+.comments{
+  .time-ago{
+    display: inline;
+    font-size: .8em;
+    font-style: italic;
+  }
+}
+.comment-form {
+  width: 40%;
+  input[type=submit]{
+    width: auto;
+  }
+}
