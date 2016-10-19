@@ -1,4 +1,4 @@
-.container
+.post-container
   = link_to 'Back to my site', root_path
   - if current_user.try(:admin?)
     p = link_to 'New Post', new_post_path
