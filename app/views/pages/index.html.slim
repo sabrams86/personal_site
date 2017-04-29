@@ -4,28 +4,22 @@
       .section
         h1 Steve Abrams
         .logo-collection
-          = image_tag('javascript_logo.png', class: 'header-logo')
-          = image_tag('scala-logo.png', class: 'header-logo')
-          = image_tag('ruby-logo.png', class: 'header-logo')
-          = image_tag('node_js_logo.png', class: 'header-logo')
-          = image_tag('rails_logo.png', class: 'header-logo')
-          = image_tag('play_logo.png', class: 'header-logo')
-          = image_tag('react_logo.png', class: 'header-logo')
-          = image_tag('redux-logo.png', class: 'header-logo')
-          = image_tag('angular_logo.png', class: 'header-logo')
-          = image_tag('postgresql.png', class: 'header-logo')
-          = image_tag('mysql-logo.png', class: 'header-logo')
-          = image_tag('mongo_leaf.png', class: 'header-logo')
-          = image_tag('HTML5_Badge_512.png', class: 'header-logo')
-          = image_tag('sass-logo-new.png', class: 'header-logo')
-          = image_tag('jasmine_logo.png', class: 'header-logo')
-          = image_tag('webpack-logo.png', class: 'header-logo')
-          = image_tag('gulp-2x.png', class: 'header-logo')
-          = image_tag('bower_logo.png', class: 'header-logo')
-          = image_tag('jquery_logo.gif', class: 'header-logo')
-          = image_tag('salt-logo.png', class: 'header-logo')
-          = image_tag('bootstrap-logo.png', class: 'header-logo')
-          = image_tag('GitHub-Mark.png', class: 'header-logo')
+          = image_tag('javascript_logo.png', title: 'Javascript' class: 'header-logo')
+          = image_tag('ruby-logo.png', title: 'Ruby' class: 'header-logo')
+          = image_tag('scala-logo.png', title: 'Scala' class: 'header-logo')
+          = image_tag('node_js_logo.png', title: 'Node' class: 'header-logo')
+          = image_tag('rails_logo.png', title: 'Rails' class: 'header-logo')
+          = image_tag('play_logo.png', title: 'Play' class: 'header-logo')
+          = image_tag('react_logo.png', title: 'React' class: 'header-logo')
+          = image_tag('redux-logo.png', title: 'Redux' class: 'header-logo')
+          = image_tag('postgresql.png', title: 'Postgres' class: 'header-logo')
+          = image_tag('mysql-logo.png', title: 'MySql' class: 'header-logo')
+          = image_tag('HTML5_Badge_512.png', title: 'HTML' class: 'header-logo')
+          = image_tag('sass-logo-new.png', title: 'Sass' class: 'header-logo')
+          = image_tag('webpack-logo.png', title: 'WebPack'class: 'header-logo')
+          = image_tag('salt-logo.png', title: 'SaltStack' class: 'header-logo')
+          = image_tag('bootstrap-logo.png', title: 'Bootstrap' class: 'header-logo')
+          = image_tag('GitHub-Mark.png', title: 'Git' class: 'header-logo')
         h3 Code, Coffee, and Life
         = link_to 'My Blog', posts_path
 .parallax-background
@@ -39,21 +33,23 @@
       p
         | I'm a web developer and software engineer in the Denver area.  I like
         |  to consider myself language agnostic, but right now I'm working in 
-        |  Scala/Play/MySQL and Ruby/Rails/PostgreSQL on the back end, and 
-        |  React/Redux/Webpack/ES6/Webpack on the front end.  I love talking about
+        |  Ruby/Rails/PostgreSQL on the back end, 
+        |  React/Redux/Webpack/ES6/Webpack on the front end, and I've recently been getting my hands into React Native apps for iOS and Android.  
+        |  I spent some time working in Scala and started to fall in love with functional programming
+        |  so many of my hobby projects are starting to dip into Elixir as a result.  I love talking about
         |  development and tech trends, as well as coffee, craft beer, and all
         |  things outdoors in Colorado.
       p 
-        | I used to be a mechanical engineer, but one day I found myself wanting to help my 
+        | I used to be a mechanical engineer, and one day I found myself wanting to help my 
         |  company re-organize their data by implementing a new database system.  
         |   After some research and advice from a friend, I decided to try to 
-        |  implement a web based database using Ruby on Rails.
+        |  implement a web based system using Ruby on Rails.
       p 
         | I spent all of my free time on nights and weekends learning the basics 
         |  and going through all sorts of tutorials I finally was able to successfully 
-        |  build the database and deploy it locally on the company's network.
+        |  build the system and deploy it locally on the company's network.
         |   Over the next year I realized that my favorite thing I had ever worked 
-        |  on (professionally or academically) was building the database.
+        |  on (professionally or academically) was building this system.
       p 
         | A friend told me about 
         a(href='http://www.galvanize.com/' target='_blank') Galvanize 
@@ -61,8 +57,16 @@
         |  decided that the timing was right, so I applied, was accepted, and 
         |  graduated in October 2015, getting a job at a quickly growing startup
         |  in the app advertising industry writing backend Scala code, tons of
-        |  SQL, and even working a bit on a modern React front end.
+        |  SQL, and even working a bit on a React/Redux front end.
       p 
+        | I'm currently a software developer at
+        a(href='https://www.roguepod.com/' target='_blank') Rogue Pod
+        |  doing consulting work for a variety of businesses working with
+        |  Ruby on Rails backends serving both React/Redux front ends, as well as
+        |  React Native mobile applications.  If you need a mobile or web solution, please do
+        |  get in touch, as we are able to help businesses small and large, funded or revenue based
+        |  build powerful, modern web applications and apps.
+      p
         | I absolutely love the tech scene and try my best to keep of with the 
         |  hottest trends, gadgets, and happenings in the tech community.  I 
         |  frequent the Denver Ruby and Scala meetups, as well as participating 
@@ -78,179 +82,15 @@
     .container
       .section
         h2 My Portfolio
-        h4.hidden-xs I believe that user experience is everything.  The most advanced site in the world is useless if no one wants to use it.
+        h4.hidden-xs I believe that user experience is everything.  The most advanced/interesting/profit-generating site in the world is useless if no one wants to use it.
 .parallax-section
   .container
     = link_to 'My Blog', posts_path
     .section
       div.portfolio
         h3 
-          | Check out my code at 
+          | I've been busy working, so most of my recent work is on private repos. Check out my code at 
           a href='https://github.com/sabrams86' target='_blank' github
-        h3 
-          | This is a collection of projects I wrote while attending Galvanize
-          |  in 2015
-        .row  
-          .col-md-4.col-xs-12
-            .project
-              header
-                h3 FriendlyGear
-                = image_tag(src='javascript_logo.png', class: 'mini-logo')
-                = image_tag(src='node_js_logo.png', class: 'mini-logo')
-                = image_tag(src='angular_logo.png', class: 'mini-logo')
-                = image_tag(src='mongo_leaf.png', class: 'mini-logo')
-                = image_tag(src='sass-logo-new.png', class: 'mini-logo')
-                = image_tag(src='jasmine_logo.png', class: 'mini-logo')
-                = image_tag(src='gulp-2x.png', class: 'mini-logo')
-                = image_tag(src='bower_logo.png', class: 'mini-logo')
-                = image_tag(src='jquery_logo.gif', class: 'mini-logo')
-                = image_tag(src='bootstrap-logo.png', class: 'mini-logo')
-              main
-                p Rent your outdoor gear to others or rent gear from others.  Think Craigslist meeets AirBnB for backpacking and outdoor activities!
-              footer  
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#fgmodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/fg' target='_blank') GitHub
-                a.btn.btn-info.right.livebutton(href='https://stormy-shore-6413.herokuapp.com' target='_blank') Live Site
-          .col-md-4.col-xs-12
-            .project
-              header
-                h3 RoadTrip
-                = image_tag('ruby-logo.png', class: 'mini-logo')
-                = image_tag('rails_logo.png', class: 'mini-logo')
-                = image_tag('react_logo.png', class: 'mini-logo')
-                = image_tag('postgresql.png', class: 'mini-logo')
-                = image_tag('sass-logo-new.png', class: 'mini-logo')
-                = image_tag('jquery_logo.gif', class: 'mini-logo')
-                = image_tag('bootstrap-logo.png', class: 'mini-logo')
-              main
-                p Make a comic and send it to your friends, but first it'll get translated to five different languages and back to english!
-              footer  
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#roadtripmodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/road-trip-back-end' target='_blank') GitHub
-                a.btn.btn-info.right.livebutton(href='http://roadtrip.abramswebdevelopment.com/' target='_blank') Live Site
-          .col-md-4.col-xs-12
-            .project
-              header
-                h3 TeleComics
-                = image_tag('javascript_logo.png', class: 'mini-logo')
-                = image_tag('node_js_logo.png', class: 'mini-logo')
-                = image_tag('mongo_leaf.png', class: 'mini-logo')
-                = image_tag('sass-logo-new.png', class: 'mini-logo')
-                = image_tag('jquery_logo.gif', class: 'mini-logo')
-                = image_tag('bootstrap-logo.png', class: 'mini-logo')
-              main
-                p Make a comic and send it to your friends, but first it'll get translated to five different languages (Klingon included) and back to english!  A fun twist on a classic game.
-                br                      
-              footer  
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#telemodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/telecomics' target='_blank') GitHub
-                a.btn.btn-info.right.livebutton(href='https://protected-waters-5312.herokuapp.com/' target='_blank') Live Site
-        .row
-          .col-xs-12
-            .project
-              header
-                h3 Double Back End
-                = image_tag('javascript_logo.png', class: 'mini-logo')
-                = image_tag('node_js_logo.png', class: 'mini-logo')
-                = image_tag('ruby-logo.png', class: 'mini-logo')
-                = image_tag('rails_logo.png', class: 'mini-logo')
-                = image_tag('angular_logo.png', class: 'mini-logo')
-                = image_tag('mongo_leaf.png', class: 'mini-logo')
-                = image_tag('gulp-2x.png', class: 'mini-logo')
-              a(href="#" data-toggle="modal" data-target="#myModal")
-                = image_tag('flow.png', class: 'flowchartsml')
-              main
-                p An experiment with Angular, Rails, and Expressjs.  Two identical angular front ends deployed statically to Amazon S3.  One talks to a Rails API backend, another to an Expressjs API (Node.js) backend.  Both backends hook into the same MongoDB.  Click the figure above to see how everthing is hooked up. 
-              footer.hidden-xs
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#teamodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/angular-cart' target='_blank') Angular GitHub 
-                | 
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/rails-shopping-cart' target='_blank') Rails GitHub
-                | 
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/mean-shopping-cart' target='_blank') Express GitHub
-                a.btn.btn-info.livebutton.right(href='http://rails-cart.s3-website-us-west-2.amazonaws.com' target='_blank') Rails Site  
-                .right &nbsp;
-                a.btn.btn-info.livebutton.right(href='http://angular-cart.s3-website-us-west-2.amazonaws.com' target='_blank') Express Site  
-              footer.hidden-sm.hidden-md.hidden-lg
-                .btn-row
-                  a.btn.btn-sm.btn-danger.left(href="#" data-toggle="modal" data-target="#teamodal") Preview
-                  a.btn.btn-sm.btn-info.livebutton(href='https://shielded-shelf-9910.herokuapp.com' target='_blank') Rails Site  
-                  a.btn.btn-sm.btn-info.livebutton.right(href='http://angular-cart.s3-website-us-west-2.amazonaws.com' target='_blank') Express Site  
-                .btn-row
-                  a.btn.btn-sm.btn-primary.gitbutton.left(href='https://github.com/sabrams86/angular-cart' target='_blank') Angular GitHub 
-                  a.btn.btn-sm.btn-primary.gitbutton(href='https://github.com/sabrams86/rails-shopping-cart' target='_blank') Rails GitHub
-                  a.btn.btn-sm.btn-primary.gitbutton.right(href='https://github.com/sabrams86/mean-shopping-cart' target='_blank') Express GitHub      
-        .row  
-          .col-md-4.col-xs-12
-            .project
-              header
-                h3 Gear Trader
-                = image_tag('javascript_logo.png', class: 'mini-logo')
-                = image_tag('node_js_logo.png', class: 'mini-logo')
-                = image_tag('mongo_leaf.png', class: 'mini-logo')
-                = image_tag('sass-logo-new.png', class: 'mini-logo')
-                = image_tag('bower_logo.png', class: 'mini-logo')
-                = image_tag('jquery_logo.gif', class: 'mini-logo')
-              main
-                p A site demonstrating complex associations using Express and MongoDB
-              footer
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#gearmodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/friendlygear' target='_blank') GitHub
-                a.btn.btn-info.right.livebutton(href='http://friendlygear.abramswebdevelopment.com/' target='_blank') Live Site
-          .col-md-4.col-xs-12
-            .project
-              header
-                h3 FlashCodes
-                = image_tag('javascript_logo.png', class: 'mini-logo')
-                = image_tag('node_js_logo.png', class: 'mini-logo')
-                = image_tag('mongo_leaf.png', class: 'mini-logo')
-                = image_tag('jasmine_logo.png', class: 'mini-logo')
-                = image_tag('jquery_logo.gif', class: 'mini-logo')
-                = image_tag('bootstrap-logo.png', class: 'mini-logo')
-              main
-                p A site for creating and playing quizzes
-              footer
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#quizmodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/quizbuilder' target='_blank') GitHub
-                a.btn.btn-info.right.livebutton(href='https://hidden-reef-5244.herokuapp.com' target='_blank') Live Site
-          .col-md-4.col-xs-12
-            .project
-              header
-                h3 Squirrel
-                = image_tag('javascript_logo.png', class: 'mini-logo')
-                = image_tag('node_js_logo.png', class: 'mini-logo')
-                = image_tag('mongo_leaf.png', class: 'mini-logo')
-              main  
-                p Help Squirrel get back to his home at the top of the tree
-              footer
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#squirrelmodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/squirrel' target='_blank') GitHub
-                a.btn.btn-info.right.livebutton(href='https://stark-caverns-9969.herokuapp.com' target='_blank') Live Site
-        .row              
-          .col-md-4.col-xs-12
-            .project
-              header
-                h3 Javascipt Filters
-                = image_tag('javascript_logo.png', class: 'mini-logo')
-                = image_tag('node_js_logo.png', class: 'mini-logo')
-                = image_tag('mongo_leaf.png', class: 'mini-logo')
-              main
-                p A proof of concept project centered around filtering with AJAX calls 
-              footer  
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#jsmodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/js-filter' target='_blank') GitHub
-                a.btn.btn-info.right.livebutton(href='https://hidden-fortress-3498.herokuapp.com' target='_blank') Live Site
-          .col-md-4.col-xs-12
-            .project
-              header
-                h3 API Demo
-                = image_tag('javascript_logo.png', class: 'mini-logo')
-              main
-                p A proof of concept project centered around API calls
-              footer
-                a.btn.btn-danger.left(href="#" data-toggle="modal" data-target="#apimodal") Preview
-                a.btn.btn-primary.gitbutton(href='https://github.com/sabrams86/api-demo' target='_blank') GitHub
-                a.btn.btn-info.right.livebutton(href='http://api-demo.abramswebdevelopment.com/' target='_blank') Live Site
   div.banner#banner3
     .container
       h2 Contact Me
@@ -284,105 +124,3 @@
       /       textarea#body(name='body' rows='8')
       /     .row
       /       button#emailbutton(type='submit') Send
-
-<!-- fg Modal -->
-div(class="modal fade" id="fgmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube-nocookie.com/embed/sC0bBjGLkFU" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-
-          
-<!-- roadtrip Modal -->
-div(class="modal fade" id="roadtripmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube-nocookie.com/embed/B9KuEGWKYQM" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-
-
-<!-- double backend flow chart Modal -->
-div(class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        = image_tag('flow.png', class: 'flowchart')
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        
-<!-- mean tea Modal -->
-div(class="modal fade" id="teamodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube.com/embed/rlbXODIxK5E" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-
-<!-- telecomics Modal -->
-div(class="modal fade" id="telemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube.com/embed/LOmV4KBDIfs" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-
-<!-- friendlygear Modal -->
-div(class="modal fade" id="gearmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube.com/embed/u04FcEEbvqk" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-
-<!-- flashcodes Modal -->
-div(class="modal fade" id="quizmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube.com/embed/sOLkdsmujnE" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-
-<!-- js-filter Modal -->
-div(class="modal fade" id="jsmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube.com/embed/cfXBSHTTP7M" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-
-<!-- squirrel Modal -->
-div(class="modal fade" id="squirrelmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube.com/embed/qrLanTOzpVM" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-
-<!-- api-demo Modal -->
-div(class="modal fade" id="apimodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
-  .modal-dialog(role="document")
-    .modal-content
-      .modal-body
-        iframe(width="480" height="360" src="https://www.youtube.com/embed/OtJOu43JysU" frameborder="0" allowfullscreen)
-      .modal-footer
-        .hidden-xs.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close
-        .hidden-sm.hidden-md.hidden-lg.left.button(type="button" class="stop-video btn btn-default" data-dismiss="modal") Close

@@ -2,7 +2,10 @@
   = link_to 'Back to my site', root_path
   - if current_user.try(:admin?)
     p = link_to 'New Post', new_post_path
-
+  h4 
+    | Here you'll find my thoughts and musings, which could span from tutorials on making
+    |  websites like this one, to what I learned while exploring a new language
+    |  or technology, to what I did last weekend that has nothing to do with code.
   - @posts.each do |post|
     h2
       = post.created_at.strftime("%d %b %Y")
