@@ -3,28 +3,26 @@
     .container
       .section
         h1 Steve Abrams
-        .logo-collection
-          = image_tag('javascript_logo.png', title: 'Javascript', class: 'header-logo')
-          = image_tag('ruby-logo.png', title: 'Ruby', class: 'header-logo')
-          = image_tag('scala-logo.png', title: 'Scala', class: 'header-logo')
-          = image_tag('node_js_logo.png', title: 'Node', class: 'header-logo')
-          = image_tag('rails_logo.png', title: 'Rails', class: 'header-logo')
-          = image_tag('play_logo.png', title: 'Play', class: 'header-logo')
-          = image_tag('react_logo.png', title: 'React', class: 'header-logo')
-          = image_tag('redux-logo.png', title: 'Redux', class: 'header-logo')
-          = image_tag('postgresql.png', title: 'Postgres', class: 'header-logo')
-          = image_tag('mysql-logo.png', title: 'MySql', class: 'header-logo')
-          = image_tag('sass-logo-new.png', title: 'Sass', class: 'header-logo')
-          = image_tag('webpack-logo.png', title: 'WebPack', class: 'header-logo')
-          = image_tag('salt-logo.png', title: 'SaltStack', class: 'header-logo')
-          = image_tag('bootstrap-logo.png', title: 'Bootstrap', class: 'header-logo')
-          = image_tag('GitHub-Mark.png', title: 'Git', class: 'header-logo')
+        / .logo-collection
+        /   = image_tag('javascript_logo.png', title: 'Javascript', class: 'header-logo')
+        /   = image_tag('ruby-logo.png', title: 'Ruby', class: 'header-logo')
+        /   = image_tag('scala-logo.png', title: 'Scala', class: 'header-logo')
+        /   = image_tag('node_js_logo.png', title: 'Node', class: 'header-logo')
+        /   = image_tag('rails_logo.png', title: 'Rails', class: 'header-logo')
+        /   = image_tag('play_logo.png', title: 'Play', class: 'header-logo')
+        /   = image_tag('react_logo.png', title: 'React', class: 'header-logo')
+        /   = image_tag('redux-logo.png', title: 'Redux', class: 'header-logo')
+        /   = image_tag('postgresql.png', title: 'Postgres', class: 'header-logo')
+        /   = image_tag('mysql-logo.png', title: 'MySql', class: 'header-logo')
+        /   = image_tag('sass-logo-new.png', title: 'Sass', class: 'header-logo')
+        /   = image_tag('webpack-logo.png', title: 'WebPack', class: 'header-logo')
+        /   = image_tag('salt-logo.png', title: 'SaltStack', class: 'header-logo')
+        /   = image_tag('bootstrap-logo.png', title: 'Bootstrap', class: 'header-logo')
+        /   = image_tag('GitHub-Mark.png', title: 'Git', class: 'header-logo')
         h3 Code, Coffee, and Life
         = link_to 'My Blog', posts_path
-.parallax-background
-  .banner#banner1
-    .container
-      h2 About Me
+  .container
+    h2 About Me
   .container
     = link_to 'My Blog', posts_path
     div.about
@@ -54,11 +52,9 @@
         | If you are looking for someone to chat with in Denver about the local
         |  tech scene or the trending tech stacks, hit me up on&nbsp;
         a(href='https://www.linkedin.com/in/stevenabrams86' target='_blank') LinkedIn.
-  .banner#banner2
-    .container
-      .section
-        h2 My Portfolio
-.parallax-section
+  .container
+    .section
+      h2 My Portfolio
   .container
     = link_to 'My Blog', posts_path
     .section
@@ -66,15 +62,14 @@
         h3
           | I've been busy working, so most of my recent work is on private repos. However, you can see if I've been up to anything on&nbsp;
           a href='https://github.com/sabrams86' target='_blank' github
-  div.banner#banner3
-    .container
-      h2 Contact Me
-      h4 Let's chat
+  .container
+    h2 Contact Me
+    h4 Let's chat
   .container
     div.contact
       a(href='/')
       h3
-        | Connect with me at
+        | Connect with me at&nbsp;
         a(href='https://www.linkedin.com/in/stevenabrams86' target='_blank') Linkedin
       / h4 or feel free to send me a message here:
       / .row
