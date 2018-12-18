@@ -9,11 +9,11 @@ html
     = csrf_meta_tags
     script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66010304-1"
     javascript:
-      | window.dataLayer = window.dataLayer || [];
-      | function gtag(){dataLayer.push(arguments);}
-      | gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-      | gtag('config', 'UA-66010304-1');
+      gtag('config', 'UA-66010304-1');
   body
     - if current_user
       = link_to 'Logout', destroy_user_session_path, {method: :delete, class: "logout"}
